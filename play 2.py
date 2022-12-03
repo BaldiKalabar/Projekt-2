@@ -1,5 +1,6 @@
-import time
-f1='0'
+import pyautogui,time,keyboard,random
+f1=[]
+
 p1=input('Друг-Привет Бро Мысли-ты возле отеля ну чё зайдёш или уйдёш??(уйти)......(пойти)').lower()
 while p1 !='уйти' and p1 !='пойти' :
     p1=input('Друг-Привет Бро Мысли-ты возле отеля ну чё зайдёш или уйдёш??(уйти)......(пойти)').lower()
@@ -8,6 +9,7 @@ if p1 == 'уйти':
     print('                                                                                                              \n3@@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@@@@@2   &@@@@@@@@@@@    s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@@@@@2   G@@@@@@@@@@@    s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@h   2@@@@@@@@@@@    ,@@@                    G@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@G   X@@@@@@@@@@@    :@@@                    G@@3      \n3@@G   i@@@@@@@@@@@@@@@@@@@@@@@B   i@@@@   :@@@@@@@G       @@@@s       :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   i@@@@@@@@@@@@@@@@@@@@@@@M   i@@@@   r@@@@@@@G       @@@@i       :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   i@@@B            @@@,    @@@@@@@@@@@2   h@@@G   3@@@    s@@@    :@@@                s@@M          \n3@@G   i@@@B            @@@:    @@@@@@@@@@@2   G@@@G   2@@@    s@@@    :@@@                i@@M          \n3@@G   i@@@MSiiiiiiS    @@@:    rrrrrrrrrrr,   G@@@G   2@@@siii9@@@    :@@@    Siiiiiiiiiii9@@@Siir      \n3@@G   i@@@@@@@@@@@@    @@@:                   G@@@G   2@@@@@@@@@@@    :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   S@@@@@@@@@@@@    @@@:                   G@@@G   2@@@@@@@@@@@    :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G                    @@@:    @@@@@@@@@@@2   G@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@G                    @@@:    @@@@@@@@@@@2   G@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@A999999999999@@@@@@@&9999@@@@@@@@@@@H999B@@@B9999999999999999999&@@@G999999999999999A@@@@@@3      \n3@@@@@@A999999999999@@@@@@@&9999@@@@@@@@@@@H999B@@@B9999999999999999999&@@@h999999999999999A@@@@@@3      \n3@@#HHHAGGGGGGGGGGG&HHHB@@@&9999@@@@@@@@@@@H999B@@@B999GGGGGGGGGGGGGGGGA@@@h999GGGGGGGGGGGGAHHH#@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A339B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999999999999999#@@@@@@@h999999999999999A@@@@@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999999999999999#@@@@@@@h999999999999999A@@@@@@3      \n3@@B999A@@@@@@@@@@@@999h@@@@@@@#999A@@@@999&@@@@@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@@@@@#999A@@@@999&@@@@@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@#HHHAG&&&&&&&&&&&HHHB@@@@@@@@HHHA&&&GHHHB@@@@@@@B999G&&&&&&&&&&&&&&GA@@@h999@@@@S::rM@@@A999B@@3      \n3@@@@@@A999999999999@@@@@@@@@@@@@@@&9999@@@@@@@@@@@B9999999999999999999G@@@h999@@@@:   B@@@A999B@@3      \n3@@@@@@A999999999999@@@@@@@@@@@@@@@&9999@@@@@@@@@@@B9999999999999999999&@@@h999@@@@:   B@@@A999B@@3       \n   M@@#############@@@&        @@@#####@@@X   G@@@@####################@@@####@@@@:   B@@@####@@@3      \n  M@@@@@@@@@@@@@@@@@@&        @@@@@@@@@@@2   G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:   B@@@@@@@@@@3       \n  sssssssssssssssssssr        issssssssss:   rssssssssssssssssssssssssssssssssssi    sssssssssss:      ')
     print('GAME OVER(Умер из за холода)')
     print('На улице начелса уроган советую пойти внутер ')
+    print('Очивка Чё ты как Помер')
     exit(0)
 if p1 =='пойти':
     p1=input('Друг-Ну чтож ты в отеле что будет делать Мысли-(а где все?).....(пошли что ли в ту дверь)').lower()
@@ -22,6 +24,7 @@ if p1== 'нет':
     time.sleep(3)
     print('                                                                                                              \n3@@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@@@@@2   &@@@@@@@@@@@    s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@@@@@2   G@@@@@@@@@@@    s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@h   2@@@@@@@@@@@    ,@@@                    G@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@G   X@@@@@@@@@@@    :@@@                    G@@3      \n3@@G   i@@@@@@@@@@@@@@@@@@@@@@@B   i@@@@   :@@@@@@@G       @@@@s       :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   i@@@@@@@@@@@@@@@@@@@@@@@M   i@@@@   r@@@@@@@G       @@@@i       :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   i@@@B            @@@,    @@@@@@@@@@@2   h@@@G   3@@@    s@@@    :@@@                s@@M          \n3@@G   i@@@B            @@@:    @@@@@@@@@@@2   G@@@G   2@@@    s@@@    :@@@                i@@M          \n3@@G   i@@@MSiiiiiiS    @@@:    rrrrrrrrrrr,   G@@@G   2@@@siii9@@@    :@@@    Siiiiiiiiiii9@@@Siir      \n3@@G   i@@@@@@@@@@@@    @@@:                   G@@@G   2@@@@@@@@@@@    :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   S@@@@@@@@@@@@    @@@:                   G@@@G   2@@@@@@@@@@@    :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G                    @@@:    @@@@@@@@@@@2   G@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@G                    @@@:    @@@@@@@@@@@2   G@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@A999999999999@@@@@@@&9999@@@@@@@@@@@H999B@@@B9999999999999999999&@@@G999999999999999A@@@@@@3      \n3@@@@@@A999999999999@@@@@@@&9999@@@@@@@@@@@H999B@@@B9999999999999999999&@@@h999999999999999A@@@@@@3      \n3@@#HHHAGGGGGGGGGGG&HHHB@@@&9999@@@@@@@@@@@H999B@@@B999GGGGGGGGGGGGGGGGA@@@h999GGGGGGGGGGGGAHHH#@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A339B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999999999999999#@@@@@@@h999999999999999A@@@@@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999999999999999#@@@@@@@h999999999999999A@@@@@@3      \n3@@B999A@@@@@@@@@@@@999h@@@@@@@#999A@@@@999&@@@@@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@@@@@#999A@@@@999&@@@@@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@#HHHAG&&&&&&&&&&&HHHB@@@@@@@@HHHA&&&GHHHB@@@@@@@B999G&&&&&&&&&&&&&&GA@@@h999@@@@S::rM@@@A999B@@3      \n3@@@@@@A999999999999@@@@@@@@@@@@@@@&9999@@@@@@@@@@@B9999999999999999999G@@@h999@@@@:   B@@@A999B@@3      \n3@@@@@@A999999999999@@@@@@@@@@@@@@@&9999@@@@@@@@@@@B9999999999999999999&@@@h999@@@@:   B@@@A999B@@3       \n   M@@#############@@@&        @@@#####@@@X   G@@@@####################@@@####@@@@:   B@@@####@@@3      \n  M@@@@@@@@@@@@@@@@@@&        @@@@@@@@@@@2   G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:   B@@@@@@@@@@3       \n  sssssssssssssssssssr        issssssssss:   rssssssssssssssssssssssssssssssssssi    sssssssssss:      ')
     print('Game Over (Убит Врменим)')
+    print('Очивка Время убивает')
     print('Ты не чего не зделал и умер от голода ')
     exit(0)
 if p1 == 'да' or 'пошли что ли в ту дверь' :
@@ -54,20 +57,24 @@ if p1=='остаться на месте':
     print('Умер от ШлЁПЫ')
     time.sleep(3)
     print('Шлёпа Оченб любит пельмени Поэтому когда моргает свет то прячься ')
+    time.sleep(1)
+    print('Очивка ШЛёпа скушал вас')
     exit(0)
 if p1=='зайти':
+    print('Очивка ШЛёпка в тазике')
     print('Шлёпа пролетел перед вами.....')
     time.sleep(5)
     print('Вы уже хотите уйти с этого места')
     time.sleep(3)
     p1=input('Вы вылезли из шкафа и видете вторую дверь с цифрой 2 Пойти (Да)......(нет)').lower()
-while p1 !='да' or p1 !='нет':
+while p1 !='да' and p1 !='нет':
     p1=input('Вы вылезли из шкафа и видете вторую дверь с цифрой 2 Пойти (Да)......(нет)').lower()
 if p1=='нет':
     print ('вы слышете странные звуки')
     time.sleep(3)
     print('                                                                                                              \n3@@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@@@@@2   &@@@@@@@@@@@    s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@@@@@2   G@@@@@@@@@@@    s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@h   2@@@@@@@@@@@    ,@@@                    G@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@G   X@@@@@@@@@@@    :@@@                    G@@3      \n3@@G   i@@@@@@@@@@@@@@@@@@@@@@@B   i@@@@   :@@@@@@@G       @@@@s       :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   i@@@@@@@@@@@@@@@@@@@@@@@M   i@@@@   r@@@@@@@G       @@@@i       :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   i@@@B            @@@,    @@@@@@@@@@@2   h@@@G   3@@@    s@@@    :@@@                s@@M          \n3@@G   i@@@B            @@@:    @@@@@@@@@@@2   G@@@G   2@@@    s@@@    :@@@                i@@M          \n3@@G   i@@@MSiiiiiiS    @@@:    rrrrrrrrrrr,   G@@@G   2@@@siii9@@@    :@@@    Siiiiiiiiiii9@@@Siir      \n3@@G   i@@@@@@@@@@@@    @@@:                   G@@@G   2@@@@@@@@@@@    :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   S@@@@@@@@@@@@    @@@:                   G@@@G   2@@@@@@@@@@@    :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G                    @@@:    @@@@@@@@@@@2   G@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@G                    @@@:    @@@@@@@@@@@2   G@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@A999999999999@@@@@@@&9999@@@@@@@@@@@H999B@@@B9999999999999999999&@@@G999999999999999A@@@@@@3      \n3@@@@@@A999999999999@@@@@@@&9999@@@@@@@@@@@H999B@@@B9999999999999999999&@@@h999999999999999A@@@@@@3      \n3@@#HHHAGGGGGGGGGGG&HHHB@@@&9999@@@@@@@@@@@H999B@@@B999GGGGGGGGGGGGGGGGA@@@h999GGGGGGGGGGGGAHHH#@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A339B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999999999999999#@@@@@@@h999999999999999A@@@@@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999999999999999#@@@@@@@h999999999999999A@@@@@@3      \n3@@B999A@@@@@@@@@@@@999h@@@@@@@#999A@@@@999&@@@@@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@@@@@#999A@@@@999&@@@@@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@#HHHAG&&&&&&&&&&&HHHB@@@@@@@@HHHA&&&GHHHB@@@@@@@B999G&&&&&&&&&&&&&&GA@@@h999@@@@S::rM@@@A999B@@3      \n3@@@@@@A999999999999@@@@@@@@@@@@@@@&9999@@@@@@@@@@@B9999999999999999999G@@@h999@@@@:   B@@@A999B@@3      \n3@@@@@@A999999999999@@@@@@@@@@@@@@@&9999@@@@@@@@@@@B9999999999999999999&@@@h999@@@@:   B@@@A999B@@3       \n   M@@#############@@@&        @@@#####@@@X   G@@@@####################@@@####@@@@:   B@@@####@@@3      \n  M@@@@@@@@@@@@@@@@@@&        @@@@@@@@@@@2   G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:   B@@@@@@@@@@3       \n  sssssssssssssssssssr        issssssssss:   rssssssssssssssssssssssssssssssssssi    sssssssssss:      ')
     print('Game Over (Убит Врменим)')
+    print('Очивка Время убивает')
     print('Ты не чего не зделал и умер от голода ')
     exit(0)
 if p1=='да':
@@ -76,7 +83,7 @@ if p1=='да':
     print('Через некоторое время...')
     time.sleep(5)
     p1=input('Хмм мы на 10 двери как ты думаеш,Где пельмени шлёпы(НЕзнаю)....(возможно на 100 двери)').lower()
-while p1 !='незнаю' or p1 !='возможно на 100 двери':
+while p1 !='незнаю' and p1 !='возможно на 100 двери':
     p1=input('Что ты не отвичаеш???(НЕзнаю)....(возможно на 100 двери)').lower()
 if p1=='незнаю':
     print('Ну ладно')
@@ -87,16 +94,135 @@ if p1=='возможно на 100 двери':
     time.sleep(4)
     p1='го'
 if p1=='го':
-    print('Блин я устал но еды нету где')
+    print('Блин я устал ')
     time.sleep(1)
     print('но еды нету где cоловая????')
     time.sleep(1)
     p1=input('Вы видете шкафчик.Проверить??? (нет).....(да)').lower()
-while p1 !='да' or p1 !='нет':
+while p1 !='да' and p1 !='нет':
     p1=input('Вы видете шкафчик.Проверить???(нет)....(да)').lower()
 if p1=='да':
     print('Вы нашли Фонарик')
     time.sleep(2)
+    f1.append ('фонарь')
+    print('Эта ваши ВЕШИ:)')
+    print(f1)
+    p1='o'
+if p1=='нет':
+    print('вы прошли дальше')
+    p1='o'
+if p1=='o':
+    print('Пройдя через следующую дверь вы видите')
+    p1=input('(Бежать)....(что там)').lower()
+while p1 !='бежать' and p1 != 'что там':
+    p1=input('(Бежать)....(что там)').lower()
+if p1=='что там':
+    print('жди')
+    pyautogui.moveTo(1700,1200)
+    pyautogui.click()
+    time.sleep(0.5)
+    pyautogui.moveTo(1830,980)
+    pyautogui.click()
+    
+    pyautogui.moveTo(80,1050)
+    pyautogui.click()
+    time.sleep(2)
+    pyautogui.moveTo(500,50)
+    pyautogui.click()
+    pyautogui.click()
+    time.sleep(2)
+    keyboard.write('Широкий путин идёт')
+    pyautogui.press('enter')
+    time.sleep(2)
+    pyautogui.moveTo(500,500)
+    pyautogui.click()
+    print('                                                                                                              \n3@@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@@@@@2   &@@@@@@@@@@@    s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@@@@@2   G@@@@@@@@@@@    s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@h   2@@@@@@@@@@@    ,@@@                    G@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@G   X@@@@@@@@@@@    :@@@                    G@@3      \n3@@G   i@@@@@@@@@@@@@@@@@@@@@@@B   i@@@@   :@@@@@@@G       @@@@s       :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   i@@@@@@@@@@@@@@@@@@@@@@@M   i@@@@   r@@@@@@@G       @@@@i       :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   i@@@B            @@@,    @@@@@@@@@@@2   h@@@G   3@@@    s@@@    :@@@                s@@M          \n3@@G   i@@@B            @@@:    @@@@@@@@@@@2   G@@@G   2@@@    s@@@    :@@@                i@@M          \n3@@G   i@@@MSiiiiiiS    @@@:    rrrrrrrrrrr,   G@@@G   2@@@siii9@@@    :@@@    Siiiiiiiiiii9@@@Siir      \n3@@G   i@@@@@@@@@@@@    @@@:                   G@@@G   2@@@@@@@@@@@    :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   S@@@@@@@@@@@@    @@@:                   G@@@G   2@@@@@@@@@@@    :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G                    @@@:    @@@@@@@@@@@2   G@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@G                    @@@:    @@@@@@@@@@@2   G@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@A999999999999@@@@@@@&9999@@@@@@@@@@@H999B@@@B9999999999999999999&@@@G999999999999999A@@@@@@3      \n3@@@@@@A999999999999@@@@@@@&9999@@@@@@@@@@@H999B@@@B9999999999999999999&@@@h999999999999999A@@@@@@3      \n3@@#HHHAGGGGGGGGGGG&HHHB@@@&9999@@@@@@@@@@@H999B@@@B999GGGGGGGGGGGGGGGGA@@@h999GGGGGGGGGGGGAHHH#@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A339B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999999999999999#@@@@@@@h999999999999999A@@@@@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999999999999999#@@@@@@@h999999999999999A@@@@@@3      \n3@@B999A@@@@@@@@@@@@999h@@@@@@@#999A@@@@999&@@@@@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@@@@@#999A@@@@999&@@@@@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@#HHHAG&&&&&&&&&&&HHHB@@@@@@@@HHHA&&&GHHHB@@@@@@@B999G&&&&&&&&&&&&&&GA@@@h999@@@@S::rM@@@A999B@@3      \n3@@@@@@A999999999999@@@@@@@@@@@@@@@&9999@@@@@@@@@@@B9999999999999999999G@@@h999@@@@:   B@@@A999B@@3      \n3@@@@@@A999999999999@@@@@@@@@@@@@@@&9999@@@@@@@@@@@B9999999999999999999&@@@h999@@@@:   B@@@A999B@@3       \n   M@@#############@@@&        @@@#####@@@X   G@@@@####################@@@####@@@@:   B@@@####@@@3      \n  M@@@@@@@@@@@@@@@@@@&        @@@@@@@@@@@2   G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:   B@@@@@@@@@@3       \n  sssssssssssssssssssr        issssssssss:   rssssssssssssssssssssssssssssssssssi    sssssssssss:      ')
+    print('Game Over (Убит ШИРОКИМ ПУТИНОМ)')
+    print('Беги! ПУТИН всегда будет следить за табой--РОССИЯ вфцафа  ')
+    print('ОЧИВКА Умер ОТ ШЫРОКОГО Путина')
+    exit(0)
+if p1=='бежать':
+    print('Вы сбежали...')
+    time.sleep(1)
+    print('(Друг)АОАОАОА куда бежиш?')
+    time.sleep(2)
+    print('Да услышал что то подозрительное')
+    time.sleep(2)
+    print('Очивка СБЕЖАЛ ОТ ????')
+    p1='pop'
+if p1=='pop':
+    print('уже 20 дверь')
+    time.sleep(3)
+    print('Вы видете тазики Стоп что')
+    print('ОГо тут какаета мини игра хмм но что тут делать')
+    p1=input('хмм смотри тазики разных форм попробуй их поставить по форме ихней(Хорошо)....(неа)').lower()
+while p1 !='хорошо' :
+    p1=input('хмм смотри тазики разных форм попробуй их поставить по форме ихней(Хорошо)').lower()
+if p1 =='хорошо':
+    print('ЗАпоминай ')
+    time.sleep(2)
+    print('Круг,Квадрат,Ромб,треугольник')
+    print('ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssvsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss')
+    print('надеюсь ты запомнил Давай')
+    p1=input('Что было()').lower()
+while p1 !='круг,квадрат,ромб,треугольник':
+    p1=input('Что было()').lower()
+if p1=='круг,квадрат,ромб,треугольник':
+    print('ОО тут открылся секретный проход за картиной')
+    p1=input('НУ что пошли дальше(да)......(нет)').lower()
+while p1 !='да' and p1 !='нет':
+    p1=input('НУ что пошли дальше(да)......(нет)').lower()
+if p1=='нет':
+    print ('вы слышете странные звуки')
+    time.sleep(3)
+    print('                                                                                                              \n3@@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@@@@@2   &@@@@@@@@@@@    s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@:    @@@@@@@@@@@2   G@@@@@@@@@@@    s@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@h   2@@@@@@@@@@@    ,@@@                    G@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@G                    @@@@@@@@@@@s    @@@@@@@@@@@G   X@@@@@@@@@@@    :@@@                    G@@3      \n3@@G   i@@@@@@@@@@@@@@@@@@@@@@@B   i@@@@   :@@@@@@@G       @@@@s       :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   i@@@@@@@@@@@@@@@@@@@@@@@M   i@@@@   r@@@@@@@G       @@@@i       :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   i@@@B            @@@,    @@@@@@@@@@@2   h@@@G   3@@@    s@@@    :@@@                s@@M          \n3@@G   i@@@B            @@@:    @@@@@@@@@@@2   G@@@G   2@@@    s@@@    :@@@                i@@M          \n3@@G   i@@@MSiiiiiiS    @@@:    rrrrrrrrrrr,   G@@@G   2@@@siii9@@@    :@@@    Siiiiiiiiiii9@@@Siir      \n3@@G   i@@@@@@@@@@@@    @@@:                   G@@@G   2@@@@@@@@@@@    :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G   S@@@@@@@@@@@@    @@@:                   G@@@G   2@@@@@@@@@@@    :@@@    @@@@@@@@@@@@@@@@@@@3      \n3@@G                    @@@:    @@@@@@@@@@@2   G@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@G                    @@@:    @@@@@@@@@@@2   G@@@G   2@@@@@@@@@@@    :@@@                    G@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@3      \n3@@@@@@A999999999999@@@@@@@&9999@@@@@@@@@@@H999B@@@B9999999999999999999&@@@G999999999999999A@@@@@@3      \n3@@@@@@A999999999999@@@@@@@&9999@@@@@@@@@@@H999B@@@B9999999999999999999&@@@h999999999999999A@@@@@@3      \n3@@#HHHAGGGGGGGGGGG&HHHB@@@&9999@@@@@@@@@@@H999B@@@B999GGGGGGGGGGGGGGGGA@@@h999GGGGGGGGGGGGAHHH#@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A339B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999999999999999#@@@@@@@h999999999999999A@@@@@@3      \n3@@B999A@@@@@@@@@@@@999h@@@&9999@@@@@@@@@@@H999B@@@B999999999999999#@@@@@@@h999999999999999A@@@@@@3      \n3@@B999A@@@@@@@@@@@@999h@@@@@@@#999A@@@@999&@@@@@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@B999A@@@@@@@@@@@@999h@@@@@@@#999A@@@@999&@@@@@@@B999H@@@@@@@@@@@@@@@@@@@h999@@@@@@@@@@@@A999B@@3      \n3@@#HHHAG&&&&&&&&&&&HHHB@@@@@@@@HHHA&&&GHHHB@@@@@@@B999G&&&&&&&&&&&&&&GA@@@h999@@@@S::rM@@@A999B@@3      \n3@@@@@@A999999999999@@@@@@@@@@@@@@@&9999@@@@@@@@@@@B9999999999999999999G@@@h999@@@@:   B@@@A999B@@3      \n3@@@@@@A999999999999@@@@@@@@@@@@@@@&9999@@@@@@@@@@@B9999999999999999999&@@@h999@@@@:   B@@@A999B@@3       \n   M@@#############@@@&        @@@#####@@@X   G@@@@####################@@@####@@@@:   B@@@####@@@3      \n  M@@@@@@@@@@@@@@@@@@&        @@@@@@@@@@@2   G@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@:   B@@@@@@@@@@3       \n  sssssssssssssssssssr        issssssssss:   rssssssssssssssssssssssssssssssssssi    sssssssssss:      ')
+    print('Game Over (Убит Врменим)')
+    print('Очивка Время убивает')
+    print('Ты не чего не зделал и умер от голода ')
+    exit(0)
+if p1=='да':
+    print('ну Lets go')
+    time.sleep(2)
+    print('Пару двересь спустя..... ')
+    time.sleep(3)
+    print('Ох блин тёмная комната нужен фонарик')
+    print('Эта ваши ВЕШИ:)')
+    print(f1)
+    if 'фонарь' in f1:
+        print('Вы прошли без всяких проблем')
+        p1='a'
+    else:
+        s1=random.randint(1,2)
+        if s1=='1':
+            print('Тебе Повезло')
+            p1='a'
+        if s1=='2':
+            print(',,,,,,')
+            print('Очивка Ема ты невезунчик')
+            print('Game Over (Убит \Своим невезением)')
+            exit(0)
+if p1=='a':
+    print('фух надеюсь что больше не будет тёмных комнат')
+    p1=input('Кстати тебе не кажеться что кто то за нами следит????(НЕт).........(Да)').lower()
+while p1 != 'да' and p1 != 'нет':
+    p1=input('Кстати тебе не кажеться что кто то за нами следит????(НЕт).........(Да)').lower()
+if p1=='да':
+    print('Ну ладно')
+    p1='sto'
+if p1=='нет':
+    print('А ты УВерЕн:)))))))')
+    p1='sto'
+if p1=='sto':
+    print('ААААААААААААААААААа СКОЛЬКО МОЖНО ДВЕРЕЙ уже 35 дверь')
+    time.sleep(3)
+    print('я щя сойду с ума(открывает дверь)')
+    p1=input('ДЛЯ Вас слово РОМ и СЛово СМерть ОДНО И ТОЖЕ(Согл)....(не согл)')
+    
+
+    
+    
+
+
     
     
     
